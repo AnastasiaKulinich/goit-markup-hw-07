@@ -1,0 +1,106 @@
+.page-header {
+  background-color: var(--header-background);
+  text-decoration: none;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+}
+.navigation {
+  margin-right: auto;
+}
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923;
+  color: var(--logo-header-color);
+  margin-right: 93px;
+}
+.header-nav {
+  margin: 0px;
+  display: flex;
+  gap: 50px;
+  padding: 0px;
+}
+.header-nav-link {
+  position: relative;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  opacity: 1;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  transition: opasity 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-nav-link.current {
+  color: #2196f3;
+}
+/* line-height/font-size = */
+.header-nav-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  color: var(--tittle-text-color);
+  font-size: 14px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+.adress-header {
+  margin: 0px;
+  display: flex;
+  gap: 50px;
+  padding: 0px;
+}
+.adress-header-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  font-size: 14px;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.adress-header-link:hover,
+.adress-header-link:focus {
+  color: var(--accent-color);
+}
+.icon-mailto {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
