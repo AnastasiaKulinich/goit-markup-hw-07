@@ -1,0 +1,38 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section.examples {
+  padding-top: 0;
+}
+.examples-label {
+  position: relative;
+  width: 370px;
+}
+.examples-text {
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.link-examples {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
