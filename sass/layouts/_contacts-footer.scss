@@ -6,11 +6,8 @@
   margin-left: 70px;
 }
 .footer-text {
+  @include font(700, 14px, 1.428, 0.03em);
   display: flex;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1428;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;

@@ -59,10 +59,10 @@ body {
 
 /* top line bg */
 .web {
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
+  font-style: normal;
   color: var(--accent-color);
 }
 

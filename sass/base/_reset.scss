@@ -21,9 +21,7 @@ img {
   display: block;
 }
 .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666;
+   @include font(700,36px,1.1666,null);
   text-align: center;
   color: var(--tittle-text-color);
   margin-bottom: 50px;

@@ -10,13 +10,10 @@
   width: 370px;
 }
 .examples__examples-text {
+  @include font(700, 14px, 1.428, 0.03em);
   position: absolute;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   display: flex;

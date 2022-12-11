@@ -33,9 +33,7 @@
 }
 
 .about__about-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428;
+  @include font(700, 14px, 1.1428, nulle);
   text-transform: uppercase;
   color: var(--tittle-text-color);
   margin: 0;

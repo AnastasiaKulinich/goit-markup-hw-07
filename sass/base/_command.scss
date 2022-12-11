@@ -9,9 +9,7 @@ body {
 
 /* top line bg */
 .web {
+  @include font(700,26px,1.1923, null);
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
   color: var(--accent-color);
 }
