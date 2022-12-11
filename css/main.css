@@ -38,6 +38,16 @@ img {
   display: block;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666;
+  text-align: center;
+  color: var(--tittle-text-color);
+  margin-bottom: 50px;
+  padding: 0px;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-seerif;
@@ -69,18 +79,18 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.page-header__container {
   display: flex;
   align-items: center;
   list-style: none;
   margin: 0 auto;
 }
 
-.navigation {
+.page-header__navigation {
   margin-right: auto;
 }
 
-.logo-header {
+.page-header__logo-header {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -90,21 +100,21 @@ body {
   margin-right: 93px;
 }
 
-.header-nav {
+.menu {
   margin: 0px;
   display: flex;
   gap: 50px;
   padding: 0px;
 }
 
-.header-nav-link {
+.menu__link {
   position: relative;
 }
 
-.header-nav-link.current {
+.menu__link.current {
   color: #2196f3;
 }
-.header-nav-link.current::after {
+.menu__link.current::after {
   content: "";
   position: absolute;
   display: block;
@@ -119,7 +129,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link {
+.menu__link {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -134,7 +144,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav-link:hover, .header-nav-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -145,7 +155,7 @@ body {
   padding: 0px;
 }
 
-.adress-header-link {
+.adress-header__link {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -159,18 +169,18 @@ body {
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-header-link:hover, .adress-header-link:focus {
+.adress-header__link:hover, .adress-header__link:focus {
   color: var(--accent-color);
 }
 
-.icon-mailto {
+.adress-header__mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon-smartphone {
+.adress-header__tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -191,21 +201,7 @@ body {
   margin-right: auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636;
@@ -217,7 +213,7 @@ body {
   margin-bottom: 30px;
 }
 
-.header-btn {
+.hero__header-btn {
   font-family: inherit;
   text-align: center;
   font-size: 16px;
@@ -234,11 +230,25 @@ body {
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-btn:hover, .header-btn:focus {
+.hero__header-btn:hover, .hero__header-btn:focus {
   background: var(--background-btn);
 }
 
-.link-item-text {
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.about-text {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -246,11 +256,11 @@ body {
   margin: 0;
 }
 
-.link-item {
+.about-text__link-item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.about-icon {
+.about-text__about-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,7 +270,7 @@ body {
   margin-bottom: 30px;
 }
 
-.about-title {
+.about__about-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
@@ -270,7 +280,7 @@ body {
   padding-bottom: 10px;
 }
 
-.about-subtitle {
+.about__about-subtitle {
   line-height: 1.7142;
   margin: 0;
   color: var(--primary-text-color);
@@ -285,12 +295,12 @@ body {
   padding-top: 0;
 }
 
-.examples-label {
+.examples__examples-label {
   position: relative;
   width: 370px;
 }
 
-.examples-text {
+.examples__examples-text {
   position: absolute;
   font-style: normal;
   font-weight: 700;
@@ -311,7 +321,7 @@ body {
   padding-bottom: 27px;
 }
 
-.link-examples {
+.examples {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -343,16 +353,6 @@ body {
   padding: 30px 10px;
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666;
-  text-align: center;
-  color: var(--tittle-text-color);
-  margin-bottom: 50px;
-  padding: 0px;
 }
 
 .team-tittle {

@@ -5,11 +5,11 @@
 .section.examples {
   padding-top: 0;
 }
-.examples-label {
+.examples__examples-label{
   position: relative;
   width: 370px;
 }
-.examples-text {
+.examples__examples-text {
   position: absolute;
   font-style: normal;
   font-weight: 700;
@@ -29,7 +29,7 @@
   padding-top: 27px;
   padding-bottom: 27px;
 }
-.link-examples {
+.examples {
   list-style: none;
   display: flex;
   gap: 30px;

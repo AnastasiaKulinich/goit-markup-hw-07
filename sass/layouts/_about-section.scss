@@ -1,0 +1,49 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.about-text {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.about-text__link-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+.about-text__about-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--team-content-background);
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.about__about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-transform: uppercase;
+  color: var(--tittle-text-color);
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.about__about-subtitle {
+  line-height: 1.7142;
+  margin: 0;
+  color: var(--primary-text-color);
+}
