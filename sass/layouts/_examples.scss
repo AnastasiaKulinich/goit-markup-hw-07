@@ -5,11 +5,10 @@
 .section.examples {
   padding-top: 0;
 }
-.examples__examples-label{
+.examples__list-label{
   position: relative;
-  width: 370px;
 }
-.examples__examples-text {
+.examples__list-label {
   @include font(700, 14px, 1.428, 0.03em);
   position: absolute;
   font-style: normal;
@@ -26,9 +25,10 @@
   padding-top: 27px;
   padding-bottom: 27px;
 }
-.examples {
+.examples__list {
   list-style: none;
   display: flex;
+  position: relative;
   gap: 30px;
   padding: 0;
   margin: 0;
