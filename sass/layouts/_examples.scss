@@ -1,14 +1,19 @@
-.section {
+.examples-img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section.examples {
-  padding-top: 0;
+.examples-img__list {
+  list-style: none;
+  display: flex;
+  position: relative;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
-.examples__list-label{
+.examples-img__label {
   position: relative;
 }
-.examples__list-text {
+.examples-img__text {
   @include font(700, 14px, 1.428, 0.03em);
   position: absolute;
   font-style: normal;
@@ -23,12 +28,4 @@
   left: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-}
-.examples__list {
-  list-style: none;
-  display: flex;
-  position: relative;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
 }

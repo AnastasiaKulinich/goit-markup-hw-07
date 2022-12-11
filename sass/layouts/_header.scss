@@ -33,7 +33,7 @@
   position: relative;
 }
 
-.menu__link.current {
+.menu__link--current {
   color: #2196f3;
   &::after {
     content: "";
