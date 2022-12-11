@@ -1,3 +1,6 @@
+.customers {
+  @extend %section;
+}
 .customers-list {
   list-style: none;
   @extend %list;

@@ -1,6 +1,7 @@
 .portfolio-nav {
   list-style: none;
   text-align: center;
+  @extend %section;
 }
 .link-filter-btn {
   display: flex;
