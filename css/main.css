@@ -136,6 +136,7 @@ body {
   border-radius: 2px;
   transition: opasity 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--accent-color);
 }
 
 .menu__link {
