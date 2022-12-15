@@ -14,6 +14,9 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 }
 .hero__title {
   @include font(900, 44px, 1.3636, 0.06em);
